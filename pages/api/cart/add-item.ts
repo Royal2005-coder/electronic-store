@@ -3,7 +3,7 @@ import { getSession } from 'next-auth/react';
 import { connectToDB } from '@/lib/mongoose';
 import Cart from '@/models/Cart';
 import User from '@/models/User';
-import Product from '@/models/Product';  // Use path alias for consistent imports
+import Product from '../../../models/Product';
 
 export default async function handler(
   req: NextApiRequest,

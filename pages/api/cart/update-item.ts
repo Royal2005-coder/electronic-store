@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { getSession } from 'next-auth/react';
 import { connectToDB } from '@/lib/mongoose';
 import Cart from '@/models/Cart';
-import User from '@/models/User';
+import User from '../../../models/User';
 
 export default async function handler(
   req: NextApiRequest,
