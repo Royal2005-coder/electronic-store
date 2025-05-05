@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 import { connectToDB } from '@/lib/mongoose';
-import User from '@/models/User';
+import User from '../../../../models/User';
 
 export async function PUT(request: Request) {
   try {
