@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../[...nextauth]/route';
 import mongoose from 'mongoose';
-import User from '@/models/User';
+import User from '../../../../models/User';
 import { connectToDB } from '@/lib/mongoose';
 
 // Sử dụng cùng mảng users từ các file trước
